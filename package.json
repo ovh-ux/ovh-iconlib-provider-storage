@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "jshint lib/*.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover jasmine"
+    "test": "istanbul cover jasmine",
+    "posttest": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
     "Storage",
@@ -19,6 +20,7 @@
   "author": "OVH",
   "license": "BSD-3-Clause",
   "devDependencies": {
+    "coveralls": "3.0.0",
     "cz-ovh-commit": "^1.0.0",
     "istanbul": "0.4.5",
     "jasmine": "2.8.0",
