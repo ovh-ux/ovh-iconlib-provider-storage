@@ -1,6 +1,6 @@
 {
   "name": "ovh-iconlib-provider-storage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Storage provider",
   "main": "lib/index.js",
   "repository": {
@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "jshint lib/*.js",
     "pretest": "npm run lint",
-    "test": "istanbul cover jasmine"
+    "test": "istanbul cover jasmine",
+    "posttest": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
     "Storage",
@@ -19,14 +20,15 @@
   "author": "OVH",
   "license": "BSD-3-Clause",
   "devDependencies": {
+    "coveralls": "3.0.0",
     "cz-ovh-commit": "^1.0.0",
     "istanbul": "0.4.5",
     "jasmine": "2.8.0",
     "jshint": "2.9.5"
   },
   "dependencies": {
-    "rduk-errors": "1.2.3",
-    "rduk-provider": "1.0.1"
+    "@rduk/errors": "1.3.0",
+    "@rduk/provider": "2.0.2"
   },
   "config": {
     "commitizen": {
