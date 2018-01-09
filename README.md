@@ -1,7 +1,7 @@
 # Icon Library - Storage Provider
 
 [![Build Status](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-storage.svg?branch=master)](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-storage)
-[![Coverage Status](https://coveralls.io/repos/github/ovh-ux/ovh-iconlib-provider-storage/badge.svg?branch=master)](https://coveralls.io/github/ovh-ux/ovh-iconlib-provider-storage?branch=readme)
+[![Coverage Status](https://coveralls.io/repos/github/ovh-ux/ovh-iconlib-provider-storage/badge.svg?branch=master)](https://coveralls.io/github/ovh-ux/ovh-iconlib-provider-storage?branch=master)
 
 [![NPM](https://nodei.co/npm/ovh-iconlib-provider-storage.png)](https://nodei.co/npm/ovh-iconlib-provider-storage/)
 
