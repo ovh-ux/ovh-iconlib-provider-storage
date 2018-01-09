@@ -57,9 +57,11 @@ describe('provider', function() {
 
         describe('method list, when called,', function() {
             it('should throw a NotImplementedError', function() {
+                spyOn(provider, "list").and.callThrough();
                 expect(function() {
-                    provider.list();
+                    provider.list('', 0, 10);
                 }).toThrowError(errors.NotImplementedError);
+                expect(provider.list).toHaveBeenCalledWith('', 0, 10);
             });
         });
 

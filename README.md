@@ -1,7 +1,7 @@
 # Icon Library - Storage Provider
 
 [![Build Status](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-storage.svg?branch=master)](https://travis-ci.org/ovh-ux/ovh-iconlib-provider-storage)
-[![Coverage Status](https://coveralls.io/repos/github/ovh-ux/ovh-iconlib-provider-storage/badge.svg?branch=readme)](https://coveralls.io/github/ovh-ux/ovh-iconlib-provider-storage?branch=readme)
+[![Coverage Status](https://coveralls.io/repos/github/ovh-ux/ovh-iconlib-provider-storage/badge.svg?branch=master)](https://coveralls.io/github/ovh-ux/ovh-iconlib-provider-storage?branch=readme)
 
 [![NPM](https://nodei.co/npm/ovh-iconlib-provider-storage.png)](https://nodei.co/npm/ovh-iconlib-provider-storage/)
 
@@ -12,7 +12,7 @@ Storage Provider used to define a contract for all storage process in the Icon L
 ### Methods to implement
 
 - `abstract` `class` StorageBaseProvider
-    - `abstract` `function` list(`string` path)
+    - `abstract` `function` list(`string` path, `number` skip, `number` take)
     - `abstract` `function` upload(`Stream` stream, `Object` options)
     - `abstract` `function` download(`string` filepath)
     - `abstract` `function` remove(`string` filepath)
